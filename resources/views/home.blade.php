@@ -2,7 +2,7 @@
 
 @section("content")
 <div class="container">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center py-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
     @foreach($movies as $movie)
     <div class="col">
       <div class="card border-0 h-100 text-dark">
@@ -13,7 +13,7 @@
           <span>{{ $movie -> original_title }}</span>
           <br>
           @endif
-          <h6 class="d-inline">Rating: </h6>
+          <h6 class="d-inline">Voto: </h6>
           <?php $stars = round(($movie -> vote) / 2); ?>
           @for($i = 0; $i < $stars; $i++)
           <i class="fa-solid fa-star text-warning"></i>
@@ -22,7 +22,7 @@
           <i class="fa-solid fa-star text-dark"></i>
           @endfor
           <br>
-          <h6 class="d-inline">Release date: </h6>
+          <h6 class="d-inline">Data di rilascio: </h6>
           <span>{{date_format(date_create($movie -> date), "d/m/Y")}}</span>
         </div>
       </div>
