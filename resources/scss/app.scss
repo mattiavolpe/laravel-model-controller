@@ -1,10 +1,18 @@
 @import '~bootstrap/scss/bootstrap';
 
-.card {
-  
-  img {
-  object-fit: cover;
-  object-position: center;
+body {
+  font-family: 'Kanit', sans-serif;
+
+  header {
+    a:hover {
+      background-color: #DC3545;
+    }
   }
 
+  .card {  
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
