@@ -1,6 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
-img {
+.card {
+  
+  img {
   object-fit: cover;
   object-position: center;
+  }
+
 }
