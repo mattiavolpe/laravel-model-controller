@@ -4,8 +4,12 @@ body {
   font-family: 'Kanit', sans-serif;
 
   header {
+    a.active {
+      box-shadow: inset 0 -3px 0 0 #DC3545;
+    }
+
     a:hover {
-      background-color: #DC3545;
+      color: #DC3545 !important;
     }
   }
 
