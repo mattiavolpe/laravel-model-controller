@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@section("pageTitle")
+Contact Us
+@endsection
+
 @section("content")
 <div class="container">
   <h1 class="text-center text-light">Contact Us</h1>
