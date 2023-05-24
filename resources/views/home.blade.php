@@ -5,7 +5,7 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
     @foreach($movies as $movie)
     <div class="col">
-      <div class="card border-0 h-100 text-dark">
+      <div class="card border-0 h-100 text-dark bg-light">
         <img height="300" src="{{ $movie -> image }}" alt="{{ $movie -> title }} poster" class="card-img-top">
         <div class="card_infos px-3 py-2">
           <h5 class="mb-0">{{ $movie -> title }}</h5>

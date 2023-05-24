@@ -9,10 +9,17 @@ body {
     }
   }
 
-  .card {  
+  .card {
+    box-shadow: -6px 6px 10px 0 #666666;
+
     img {
       object-fit: cover;
       object-position: center;
+      transition: object-fit 0.3s;
+
+      &:hover {
+        object-fit: contain;
+      }
     }
   }
 }
