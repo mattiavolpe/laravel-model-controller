@@ -16,4 +16,8 @@ use App\Http\Controllers\Guest\PageController;
 
 Route::get('/', [PageController::class, "index"])->name("home");
 
+Route::get('/sortByVote', [PageController::class, "sortByVote"])->name("sortByVote");
+
+Route::get('/sortByTitle', [PageController::class, "sortByTitle"])->name("sortByTitle");
+
 Route::get('/contactUs', [PageController::class, "contactUs"])->name("contactUs");
